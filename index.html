@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>webpack-test</title>
+</head>
+<body>
+<!--注释待删除-->
+<%= htmlWebpackPlugin.options.date %>
+<% for(var key in htmlWebpackPlugin) {%>
+	<%= key %>
+<% } %>
+<% for(var key in htmlWebpackPlugin.files) {%>
+	<%= key %> : <%= JSON.stringify(htmlWebpackPlugin.files[key]) %>
+<% } %>
+<% for(var key in htmlWebpackPlugin.options) {%>
+	<%= key %> : <%= JSON.stringify(htmlWebpackPlugin.options[key]) %>
+<% } %>
+</body>
+<script type="text/javascript"></script>
+</html>
